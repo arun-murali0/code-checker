@@ -1,9 +1,8 @@
 import { Router } from 'express';
-import { createNewUser } from 'src/controller';
+import { createNewUser } from '../controller/index';
 
 const router = Router();
 
-router.get("/",createNewUser)
+router.get('/create', createNewUser);
 
-
-export default router
+export default router;
